@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "content1 content2 content3"
+    "footer footer footer ";
+    grid-gap: 0.5rem;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: lavender;
+    display: flex;
+    justify-content: space-around;
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: purple;
+}
+.main{
+    grid-area: main;
+    background-color: purple;
+    background-image: url(../images/assets/photos/01-day.jpg);
+}
+.content1{
+    grid-area: content1;
+    background-color: purple;
+}
+.content2{
+    grid-area: content2;
+    background-color: purple;
+}
+.content3{
+    grid-area: content3;
+    background-color: purple;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lavender;
+}
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+    
+}
