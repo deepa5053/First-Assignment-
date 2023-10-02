@@ -19,13 +19,14 @@ body{
     "footer footer footer ";
     grid-gap: 0.5rem;
 }
-
 .nav{
     grid-area: nav;
     background-color: lavender;
     display: flex;
     justify-content: space-around;
+    padding: 15px;
 }
+
 .logo-img{
     height: 100px;
     width: 100px;
@@ -53,6 +54,7 @@ nav a:hover {
     grid-area: main;
     background-color: purple;
     background-image: url(../images/assets/photos/01-day.jpg);
+    background-size: 100%;
 }
 .content1{
     grid-area: content1;
