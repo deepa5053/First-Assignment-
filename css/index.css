@@ -11,23 +11,22 @@ body{
 }
 .wrapper{
     max-width: 1000px;
-   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.8fr 1.5fr 2.2fr 0.8fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
     grid-template-areas: 
     "nav nav nav"
     "main main main"
     "content1 content2 content3"
     "footer footer footer ";
-    grid-gap: 0.5rem;
+   
 }
 .nav{
     grid-area: nav;
     background-color: lavender;
     display: flex;
     justify-content: space-around;
-   
+   padding: .2rem;
 }
 
 .logo-img{
@@ -94,6 +93,8 @@ nav a:hover {
     background-image: url(../images/assets/photos/03-day.jpg);
     width: 100%;
     background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 15rem;
 }
 .content3{
     grid-area: content3;
@@ -115,6 +116,7 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-right: 20px;
+   
     
 }
 .contact-form {
