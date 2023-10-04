@@ -81,8 +81,6 @@ nav a:hover {
 }
 .content1{
     grid-area: content1;
-    width: 100%;
-    background-size: 100%;
     background-color: #fff;
     color: purple;
     font-size: 20px;
@@ -136,6 +134,76 @@ label {
     font-size: 20px;
     margin-bottom: 5px;
 }
+/*gallery page*/
+.wrapper-gallery{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "main-room main-room main-room"
+    "img img img"
+    "img img img"
+    "footer footer footer ";
+   
+}
+.img{
+    grid-area: img;
+    display: flex;
+   flex-direction: column;
+    grid-gap: 10px;
+    
+}
+.main-room{
+    grid-area: main-room;
+}
+.img p{
+    color: white;
+}
+.img-1{
+    background-image: url(../images/assets/photos/01-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    
+}
+.img-2{
+    
+    background-image: url(../images/assets/photos/02-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-3{
+  
+    background-image: url(../images/assets/photos/03-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-4{
+  
+    background-image: url(../images/assets/photos/04-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-5{
+  
+    background-image: url(../images/assets/photos/05-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.img-6{
+  
+    background-image: url(../images/assets/photos/06-day.jpg);
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
 /* booking*/
 .booking-form-container {
    width: 400px;
@@ -180,7 +248,7 @@ label {
     justify-content: space-around;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
     .wrapper{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
