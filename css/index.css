@@ -1,7 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -9,30 +10,33 @@ body{
     display: flex;
     justify-content: center;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 
-    "nav nav nav"
-    "main main main"
-    "content1 content2 content3"
-    "footer footer footer ";
-   
+    grid-template-areas:
+        "nav nav nav"
+        "main main main"
+        "content1 content2 content3"
+        "footer footer footer ";
+
 }
-.nav{
+
+.nav {
     grid-area: nav;
     background-color: lavender;
     display: flex;
     justify-content: space-around;
-   padding: .2rem;
+    padding: .2rem;
 }
 
-.logo-img{
+.logo-img {
     height: 100px;
     width: 100px;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -48,6 +52,7 @@ nav a {
     text-decoration: none;
     font-size: 28px;
 }
+
 nav a:hover {
     background-color: purple;
     width: 400px;
@@ -55,38 +60,42 @@ nav a:hover {
     border-radius: 20px;
 }
 
-.main{
+.main {
     grid-area: main;
     background-color: purple;
     background-image: url(../images/assets/photos/01-day.jpg);
     background-size: 100%;
     width: 100%;
 }
-.main-heading{
+
+.main-heading {
     color: aliceblue;
     margin: 10%;
 }
-.main-btn{
+
+.main-btn {
     border-radius: 10px;
     margin: 10%;
     text-align: center;
     width: 200px;
     height: 50px;
 }
-.main-btn:hover{
+
+.main-btn:hover {
     background-color: purple;
     width: 400px;
     height: 100px;
     color: white;
 }
-.content1{
+
+.content1 {
     grid-area: content1;
     background-color: #fff;
     color: purple;
     font-size: 20px;
 }
 
-.content2{
+.content2 {
     grid-area: content2;
     background-image: url(../images/assets/photos/03-day.jpg);
     width: 100%;
@@ -94,7 +103,8 @@ nav a:hover {
     background-repeat: no-repeat;
     min-height: 15rem;
 }
-.content3{
+
+.content3 {
     grid-area: content3;
     width: 100%;
     background-size: 100%;
@@ -102,111 +112,131 @@ nav a:hover {
     color: purple;
     font-size: 20px;
 }
+
 /*contact page*/
-.contact-container{
+.contact-container {
     display: flex;
-    flex-direction: row;
-    
-}
-.contact-info {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     margin-right: 20px;
-   
-    
+
 }
+
 .contact-form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
+
 .input-group {
     margin-bottom: 20px;
     font-size: 20px;
 }
+
 button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
 label {
     font-size: 20px;
     margin-bottom: 5px;
 }
+
 /*gallery page*/
-.wrapper-gallery{
+
+.wrapper-gallery {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: 
-    "nav nav nav"
-    "main-room main-room main-room"
-    "img img img"
-    "img img img"
-    "footer footer footer ";
-   
+    grid-template-areas:
+        "nav nav nav"
+        "main-room main-room main-room"
+        "img img img"
+        "img img img"
+        "footer footer footer ";
+
 }
-.img{
+
+.img {
     grid-area: img;
     display: flex;
-   flex-direction: column;
-    grid-gap: 10px;
+    flex-direction: row;
+    grid-gap: 20px;
     
 }
-.main-room{
+
+.main-room {
     grid-area: main-room;
+    padding: 3rem;
 }
-.img p{
+.main-room h1{
+    font-size: 30px;
     color: white;
 }
-.img-1{
+.main-room h4{
+    font-size: 30px;
+    color: white;
+}
+.img p {
+    color: white;
+    font-size: 20px;
+}
+
+.img-1 {
     background-image: url(../images/assets/photos/01-day.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 
-    
+
 }
-.img-2{
-    
+
+.img-2 {
     background-image: url(../images/assets/photos/02-day.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-3{
-  
-    background-image: url(../images/assets/photos/03-day.jpg);
+
+.img-3 {
     width: 100%;
+    background-image: url(../images/assets/photos/03-day.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-4{
-  
+
+.img-4 {
+
     background-image: url(../images/assets/photos/04-day.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-5{
-  
+
+.img-5 {
+
     background-image: url(../images/assets/photos/05-day.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.img-6{
-  
+
+.img-6 {
+
     background-image: url(../images/assets/photos/06-day.jpg);
     width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
 /* booking*/
 .booking-form-container {
-   width: 400px;
+    width: 400px;
     height: 500px;
 }
 
@@ -216,6 +246,7 @@ label {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 /* about us page*/
 .about {
     color: purple;
@@ -237,28 +268,69 @@ label {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+
 /*footer section*/
-.footer{
+.footer {
     grid-area: footer;
     background-color: lavender;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-
+/* media query for tablets*/
 @media screen and (max-width: 760px) {
-    .wrapper{
+    .wrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
-        grid-template-areas: 
-        "nav"
-        "main"
-        "content1"
-        "content2"
-        "content3"
-        "footer";
+        grid-template-rows: 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
     }
-    
+
+}
+@media screen and (max-width: 760px) {
+    .wrapper-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+        grid-template-areas:
+            "nav"
+            "main-room"
+            "img"
+            "footer";
+    }
+
+}
+/* media query for mobiles*/
+@media screen and (max-width: 480px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1.1fr 0.6fr 0.6fr 0.6fr 0.5fr;
+        grid-template-areas:
+            "nav"
+            "main"
+            "content1"
+            "content2"
+            "content3"
+            "footer";
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .wrapper-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.6fr 0.6fr;
+        grid-template-areas:
+            "nav"
+            "main-room"
+            "img"
+            "footer";
+    }
+
 }
