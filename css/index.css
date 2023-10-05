@@ -116,12 +116,15 @@ nav a:hover {
 /*contact page*/
 .contact-container {
     display: flex;
+    flex-direction: row;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-right: 20px;
-
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 350px;
+    width: 400px;
 }
 
 .contact-form {
@@ -134,7 +137,7 @@ nav a:hover {
 
 .input-group {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 button[type="submit"]:hover {
@@ -142,7 +145,7 @@ button[type="submit"]:hover {
 }
 
 label {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 5px;
 }
 
@@ -167,21 +170,25 @@ label {
     display: flex;
     flex-direction: row;
     grid-gap: 20px;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .main-room {
     grid-area: main-room;
     padding: 3rem;
 }
-.main-room h1{
+
+.main-room h1 {
     font-size: 30px;
     color: white;
 }
-.main-room h4{
+
+.main-room h4 {
     font-size: 30px;
     color: white;
 }
+
 .img p {
     color: white;
     font-size: 20px;
@@ -189,39 +196,41 @@ label {
 
 .img-1 {
     background-image: url(../images/assets/photos/01-day.jpg);
-    width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
-
+    width: 250px;
+    height: 300px;
 
 }
 
 .img-2 {
     background-image: url(../images/assets/photos/02-day.jpg);
-    width: 100%;
+    width: 250px;
+    height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .img-3 {
-    width: 100%;
+    width: 250px;
+    height: 300px;
     background-image: url(../images/assets/photos/03-day.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .img-4 {
-
+    width: 250px;
+    height: 300px;
     background-image: url(../images/assets/photos/04-day.jpg);
-    width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .img-5 {
-
+    width: 250px;
+    height: 300px;
     background-image: url(../images/assets/photos/05-day.jpg);
-    width: 100%;
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -229,18 +238,22 @@ label {
 .img-6 {
 
     background-image: url(../images/assets/photos/06-day.jpg);
-    width: 100%;
+    width: 250px;
+    height: 300px;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 /* booking*/
 .booking-form-container {
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .booking-form {
+    height: 500px;
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -280,6 +293,7 @@ label {
     flex-direction: row;
     justify-content: space-around;
 }
+
 /* media query for tablets*/
 @media screen and (max-width: 760px) {
     .wrapper {
@@ -293,9 +307,6 @@ label {
             "content3"
             "footer";
     }
-
-}
-@media screen and (max-width: 760px) {
     .wrapper-gallery {
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
@@ -307,6 +318,7 @@ label {
     }
 
 }
+
 /* media query for mobiles*/
 @media screen and (max-width: 480px) {
     .wrapper {
@@ -320,9 +332,15 @@ label {
             "content3"
             "footer";
     }
-
-}
-@media screen and (max-width: 480px) {
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .wrapper-gallery {
         grid-template-columns: 1fr;
         grid-template-rows: 0.2fr 0.6fr 0.6fr 0.6fr;
